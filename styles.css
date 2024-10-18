@@ -1,0 +1,76 @@
+* {
+  font-family: orbitron;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  border: 1px solid gray;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 10px 10px rgb(80, 80, 80);
+  z-index: 30;
+  background: rgba(0, 0, 0, 0.635);
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+input {
+  width: 80%;
+  height: 25px;
+  border-radius: 5px;
+  padding: 5px;
+  font-family: orbitron;
+  letter-spacing: 1.2px;
+}
+
+input:focus {
+  outline: none;
+  border: 3px double rgb(21, 188, 22);
+}
+
+button {
+  margin-top: 10px;
+  height: 40px;
+  width: 80px;
+  border-radius: 5px;
+  font-family: orbitron;
+  letter-spacing: 1.5px;
+  background-color: rgb(21, 188, 22);
+  color: white;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: rgb(17, 161, 17);
+  cursor: pointer;
+}
+
+video {
+  z-index: -1;
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1;
+}
+
+#result,
+#attempts {
+  font-weight: bolder;
+}
